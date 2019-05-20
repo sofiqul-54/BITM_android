@@ -1,0 +1,9 @@
+Class
+Object
+method
+variable
+data type
+Constructor
+conditional dstatement
+loop
+collection
