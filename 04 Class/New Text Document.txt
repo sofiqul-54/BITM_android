@@ -1,0 +1,30 @@
+Activity Method()
+onCreate()
+onStart()
+onResume()
+onPasued()
+onStop()
+onRestrat()
+onDestroye()
+
+
+Does not exist
+Forground
+[1st 3 method called 1-3()]
+
+Background
+
+forground to background [2() called pouse & stop]
+paused
+[only paused]
+
+destroy
+[onpaused, stop & destroy]
+
+
+TASk
+====> profile UI
+====> Currency Convertor
+====> Activity Lifecycle
+
+
