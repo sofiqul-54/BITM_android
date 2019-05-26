@@ -2,6 +2,7 @@ package com.mobileappdevelop.currencyconverter;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,12 +30,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
 
+    void convertUsdToBdt() {
+        EditText inputET = (EditText) findViewById(R.id.inputET);
+        inputET.setInputType(InputType.TYPE_CLASS_NUMBER);
 
+        RadioButton dolToBdt = (RadioButton) findViewById(R.id.dollerToBdtRB);
+        RadioButton bdtToDol = (RadioButton) findViewById(R.id.bdtToDollerRB);
 
+        TextView resultET = (TextView) findViewById(R.id.resultTV);
 
-
+        double a = Integer.parseInt(inputET.getText().toString());
+        double result = a/80;
+        resultET.setText(String.valueOf(result));
 
     }
-    
+
 }
