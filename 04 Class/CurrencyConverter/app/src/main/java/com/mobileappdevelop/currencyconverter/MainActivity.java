@@ -16,25 +16,44 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText inputET = findViewById(R.id.inputET);
-        RadioButton dollaerToBdt = findViewById(R.id.dollerToBdtRB);
-        RadioButton bdtToDollar = findViewById(R.id.bdtToDollerRB);
+        final EditText inputET = findViewById(R.id.inputET);
+        final RadioButton dollaerToBdt = findViewById(R.id.dollerToBdtRB);
+        final RadioButton bdtToDollar = findViewById(R.id.bdtToDollerRB);
         Button converytBtn = findViewById(R.id.convertBtn);
         final TextView resultET = findViewById(R.id.resultTV);
+        Button resetButton = findViewById(R.id.resetButtonId);
 
         converytBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Currency Convert", Toast.LENGTH_LONG).show();
+                String amount = inputET.getText().toString();
+
+                if (amount.equals("")) {
+                    Toast.makeText(MainActivity.this, "Please Enter A Number", Toast.LENGTH_LONG).show();
+                } else {
+                    if (dollaerToBdt.isChecked()) {
+                        double result = Double.valueOf(amount) * 84.94;
+
+                        resultET.setText(String.valueOf(result));
+                    } else if (bdtToDollar.isChecked()) {
+                        double result = Double.valueOf(amount) / 84.94;
+
+                        resultET.setText(String.valueOf(result));
+                    }
+                }
             }
         });
-
-
-
-
-
-
-
     }
-    
 }
+
+
+
+
+/*
+resetButton.setOnClickListener(new View.OnClickListener() {
+@Override
+public void onClick(View view) {
+        inputET.setText("");
+        resultET.setText("0.0");
+        }
+        });*/

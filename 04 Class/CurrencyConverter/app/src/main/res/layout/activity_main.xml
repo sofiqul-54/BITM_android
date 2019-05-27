@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:padding="50dp">
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,6 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Your Amount"
+        android:textAlignment="center"
         android:inputType="number"
         android:textSize="19sp" />
 
@@ -49,13 +52,27 @@
             android:layout_height="wrap_content"
             android:text="BDT to Dollar" />
     </RadioGroup>
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <Button
         android:id="@+id/convertBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Convert" />
+        android:text="Convert"
+        style="@style/Base.TextAppearance.AppCompat.Button"/>
+
+    <Button
+        android:id="@+id/resetButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_margin="10dp"/>
+
+
+</LinearLayout>
+
 
     <TextView
         android:id="@+id/resultTV"
