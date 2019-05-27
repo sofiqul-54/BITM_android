@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String amount = inputET.getText().toString();
 
-<<<<<<< HEAD
+
                 if (amount.equals("")) {
                     Toast.makeText(MainActivity.this, "Please Enter A Number", Toast.LENGTH_LONG).show();
                 } else {
@@ -42,39 +42,24 @@ public class MainActivity extends AppCompatActivity {
 
                         resultET.setText(String.valueOf(result));
                     }
+
                 }
+
+            }
+
+        });
+        resetButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                inputET.setText("");
+                resultET.setText("0.0");
             }
         });
     }
 }
-=======
-    }
 
-    void convertUsdToBdt() {
-        EditText inputET = (EditText) findViewById(R.id.inputET);
-        inputET.setInputType(InputType.TYPE_CLASS_NUMBER);
 
-        RadioButton dolToBdt = (RadioButton) findViewById(R.id.dollerToBdtRB);
-        RadioButton bdtToDol = (RadioButton) findViewById(R.id.bdtToDollerRB);
->>>>>>> 94c7065ad032478af78d185eab2f0813120a21cf
 
-        TextView resultET = (TextView) findViewById(R.id.resultTV);
 
-        double a = Integer.parseInt(inputET.getText().toString());
-        double result = a/80;
-        resultET.setText(String.valueOf(result));
 
-<<<<<<< HEAD
-/*
-resetButton.setOnClickListener(new View.OnClickListener() {
-@Override
-public void onClick(View view) {
-        inputET.setText("");
-        resultET.setText("0.0");
-        }
-        });*/
-=======
-    }
 
-}
->>>>>>> 94c7065ad032478af78d185eab2f0813120a21cf

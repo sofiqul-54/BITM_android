@@ -15,26 +15,18 @@
         android:layout_gravity="center"
         android:text="@string/currency_converter"
         android:textColor="@color/colorAccent"
-        android:textSize="25sp"
-        android:background=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="25sp" />
 
     <EditText
         android:id="@+id/inputET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:hint="Enter Your Amount"
         android:textAlignment="center"
-=======
-        android:hint="@string/enter_your_amount"
->>>>>>> 94c7065ad032478af78d185eab2f0813120a21cf
         android:inputType="number"
         android:textSize="19sp"
-        android:autofillHints="" />
+        android:singleLine="true"
+        />
 
     <TextView
         android:layout_width="match_parent"
@@ -66,8 +58,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Convert"
-        style="@style/Base.TextAppearance.AppCompat.Button"/>
+        android:text="Convert" />
 
     <Button
         android:id="@+id/resetButtonId"
