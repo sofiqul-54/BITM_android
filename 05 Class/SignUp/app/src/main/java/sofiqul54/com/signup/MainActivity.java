@@ -2,6 +2,7 @@ package sofiqul54.com.signup;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
@@ -51,7 +52,10 @@ tncCB.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean checked) {
         if(checked==true){
+            signUpBtn.setVisibility(View.VISIBLE);
 
+        }else if(checked==false){
+            signUpBtn.setVisibility(View.GONE);
         }
     }
 });
