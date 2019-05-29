@@ -9,6 +9,78 @@
     android:gravity="center"
     android:padding="50dp">
 
+<<<<<<< HEAD
 
+=======
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/currency_converter"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/inputET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Amount"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:textSize="19sp"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Currency Type" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/dollerToBdtRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Dollar to BDT" />
+
+        <RadioButton
+            android:id="@+id/bdtToDollerRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BDT to Dollar" />
+    </RadioGroup>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/convertBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Convert" />
+
+    <Button
+        android:id="@+id/resetButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_margin="10dp"/>
+
+
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="0.0"
+        android:textSize="20sp" />
+>>>>>>> eedbd4b56382885bbde98e61377c979df98df6c3
 
 </LinearLayout>
