@@ -7,11 +7,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 
-    private static String DATABASE_NAME = "User.db";
-    private static String TABLE_NAME = "User";
-    private static String COL_ID = "Id";
-    private static String COL_NAME = "Name";
-    private static String COL_AGE = "Age";
+    public static String DATABASE_NAME = "User.db";
+    public static String TABLE_NAME = "User";
+    public static String COL_ID = "Id";
+    public static String COL_NAME = "Name";
+    public static String COL_AGE = "Age";
     private static int VERSION = 1;
     private String CREATE_TABLE = "create table "+TABLE_NAME+" (Id INTEGER PRIMARY KEY, NAME TEXT, Age TEXT)";
 
